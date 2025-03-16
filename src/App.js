@@ -135,7 +135,7 @@ function App() {
     getLoc();
     const interval=setInterval(()=>{
         getLoc();
-    },60*1000);
+    },30*60*1000);
     return ()=>clearInterval(interval);
   },[]);
 

@@ -206,4 +206,17 @@ html, body {
   .details-grid {
     grid-template-columns: 1fr;
   }
+
+  body,html{
+    overflow: auto;
+  }
+}
+
+
+
+.navbar-toggler{
+border: 2px solid ;
+}
+.navbar-toggler:focus{
+box-shadow: none;
 }
