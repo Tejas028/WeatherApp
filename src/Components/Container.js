@@ -67,7 +67,7 @@ export default function Container({ mode, now, sunRise, sunSet, weather, feelsLi
         width: "90%",
         maxWidth: "800px",
         margin: "0 auto",
-        marginTop: "20vh",
+        marginTop: "5vh",
         padding: "20px", // Reduced padding
         borderRadius: "20px",
         backgroundColor: mode ? "rgba(30, 58, 138, 0.3)" : "rgba(255, 255, 255, 0.7)",
@@ -75,6 +75,7 @@ export default function Container({ mode, now, sunRise, sunSet, weather, feelsLi
         boxShadow: mode ? "0 10px 25px rgba(0, 0, 0, 0.2)" : "0 10px 25px rgba(0, 0, 0, 0.1)",
         transition: "all 0.4s ease-in-out",
         maxHeight: "85vh" // Ensure it fits in viewport
+        
     });
 
     // Hover effects
