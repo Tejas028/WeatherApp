@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 export default function Navbar({ title, mode, setMode, city, setCity }) {
+
+    
     
     const changeMode = () => {
         setMode(prevMode => {
@@ -30,6 +32,7 @@ export default function Navbar({ title, mode, setMode, city, setCity }) {
         document.getElementsByClassName('navbar-toggler-icon')[0].style.backgroundImage =
             "url('data:image/svg+xml,%3csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 30%22%3e%3cpath stroke=%22white%22 stroke-linecap=%22round%22 stroke-miterlimit=%2210%22 stroke-width=%222%22 d=%22M4 7h22M4 15h22M4 23h22%22/%3e%3c/svg%3e')";
     };
+    
     
 
     return (
