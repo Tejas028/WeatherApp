@@ -5,7 +5,7 @@ import Navbar from './Components/Navbar';
 import PropTypes from 'prop-types';
 
 function App() {
-  const api = "d0041e74559b997faa3c32dbb6124ea8";
+  const api = process.env.REACT_APP_WEATHER_API_KEY;
 
   const [sunriseTime, setSunriseTime] = useState("");
   const [sunsetTime, setSunsetTime] = useState("");
@@ -130,6 +130,14 @@ function App() {
       setDarkMode(true);
     }
   };
+
+  useEffect(()=>{
+    getLoc();
+    const interval=setInterval(()=>{
+        getLoc();
+    },60*1000);
+    return ()=>clearInterval(interval);
+  },[]);
 
   return (
     <>
