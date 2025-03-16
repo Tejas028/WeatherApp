@@ -12,6 +12,9 @@ This application supports automatic location detection and also allows users to 
 
 With WeatherApp, staying updated with the weather has never been easier! 🌤️🌧️🌪️
 
+## Disclaimer
+**The weather conditions displayed here may vary slightly from the actual data **
+
 ## Available Scripts
 
 In the project directory, you can run:
